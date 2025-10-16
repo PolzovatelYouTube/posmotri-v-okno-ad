@@ -9,8 +9,8 @@ html {
 }
 
 .page {
-    width: 1200px;
-    height: 800px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -29,7 +29,9 @@ ul,
 ol,
 li,
 blockquote,
-fieldset {
+fieldset,
+button,
+search-form__fieldset {
     margin: 0;
     padding: 0;
 }
@@ -57,6 +59,7 @@ ol {
   flex-direction: row;
   justify-content: center;
   align-items: flex-end;
+  align-self: center;
   padding: 0px;
   gap: 30px;
   width: 1140px;
@@ -83,11 +86,11 @@ ol {
 }
 
 .result__video-container {
- width: 711px;
- height: 386px;
- flex: none;
- order: 0;
- flex-grow: 0;
+    width: 711px;
+    height: 386px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
 
 .result__video {
@@ -95,12 +98,18 @@ ol {
     height: 100%;
 }
 
+.search-form,
+.search-form__fieldset {
+    border: 0;
+}
+
 .search-form {
   width: 711px;
   height: 54px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  justify-content: space-between;
+  flex-grow: 0;
 }
 
 .search-form__fieldset{
@@ -112,6 +121,32 @@ ol {
     top: 0px;
 }
 
+
+.search-form__submit-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: 194px;
+    height: 34px;
+    left: 517px;
+    margin-top: 20px;
+    border: 1px solid white;
+}
+
+.button {
+    background-color: transparent;
+    font-family: 'Fira Sans Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 .content__details {
   width: 399px;
   height: 534px;
@@ -119,9 +154,29 @@ ol {
   gap: 26px;
 }
 
+.content__accent{
+    color: #545050;
+    font-family: 'Oswald'
+}
+
 .title {
-    font-size: 56px;
-    font-weight: bold;
-    color: #fff;
-    line-height: 0.95;
+    width: 259px;
+    height: 210px;
+    color: white;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 94%;
+    font-family: 'Oswald'
+    font-style: normal;
+    text-transform: uppercase;
+}
+.content__list-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px 198px;
+    isolation: isolate;
+    width: 399px;
+    height: 298px;
+    overflow: scroll;
 }
