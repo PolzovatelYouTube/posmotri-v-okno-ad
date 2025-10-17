@@ -42,6 +42,7 @@ ol {
 }
 
 /* Кастомный скроллбар */
+
 .custom-scrollbar::-webkit-scrollbar {
     width: 4px;
 }
@@ -53,6 +54,7 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
     background-color: #D9D9D9;
 }
+
 
 .content {
     display: grid;
@@ -186,30 +188,29 @@ ol {
   box-sizing: border-box;
 }
 
-/* Стили для выбранного состояния */
-
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background: #fff;
   border-color: #fff;
+}
+
+.search-form__checkbox-list{
+    display: flex;
+    flex-direction: row;
 }
 
 .content__list-container {
   position: relative;
   block-size: 298px;
   overflow: auto;
-  padding: 2px;
   gap: 30px;
 }
 
 .content__list {
   display: flex;
   flex-direction: column;
+  width: 390px;
   gap: 22px;
-}
-
-.content__list-item {
-  padding-left: 3px;
-  padding-right: 3px;
+  padding: 0;
 }
 
 .content__video-card {
@@ -231,7 +232,7 @@ ol {
 
 .content__video-card-thumbnail {
   /* видео для видеокарточки */
-  /*object-fit:cover;*/
+  object-fit:cover;
   object-position: center;
   width: 194px;
   height: 103px;
@@ -269,7 +270,7 @@ ol {
   flex-grow: 1;
   flex-direction: column;
   gap: 6px;
-  width: 100%;
+  width: 196px;
 }
 
 .content__card-link_current {
