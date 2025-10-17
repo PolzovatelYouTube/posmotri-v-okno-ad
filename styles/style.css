@@ -180,3 +180,33 @@ ol {
     height: 298px;
     overflow: scroll;
 }
+
+.search-form__label {
+
+}
+
+.search-form__checkbox.visually-hidden {
+  position: relative;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.search-form__pseudo-checkbox {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #fff;
+  background: transparent;
+  vertical-align: middle;
+  transition: background 0.2s, border-color 0.2s;
+/*  margin-right: 8px; */
+  box-sizing: border-box;
+}
+
+/* Стили для выбранного состояния */
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  background: #fff;
+  border-color: #fff;
+}
